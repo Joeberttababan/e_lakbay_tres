@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - e-Lakbay</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Dashboard</h2>
+        <button class="toggle-btn">☰</button>
+      </div>
+
+      <div class="profile-card">
+        <img src="assets/profile.png" alt="Profile" class="profile-pic">
+        <h3>Admin Name</h3>
+        <p>Role: Administrator</p>
+      </div>
+
+      <nav class="sidebar-menu">
+        <ul>
+          <li><a href="#">Add Municipality</a></li>
+          <li><a href="#">Upload Images</a></li>
+          <li><a href="#">Track Visits</a></li>
+          <li><a href="#">View Recommendations</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Welcome to e-Lakbay Dashboard</h1>
+        <a href="login.html" class="logout-btn">Logout</a>
+      </header>
+
+      <div class="feed" id="dashboardFeed">
+        <!-- JS can inject posts / destinations -->
+        <p class="no-content">No content available yet.</p>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="scripts/dashboard.js" type="module"></script>
+</body>
+</html>
