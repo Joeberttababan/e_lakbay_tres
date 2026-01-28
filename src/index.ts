@@ -1,5 +1,5 @@
 // src/index.ts
-import { getDestinations, incrementVisit, Destination } from './destination.js';
+import { getDestinations, incrementVisit, Destination } from './destination';
 
 const searchBox = document.querySelector('.search-box input') as HTMLInputElement;
 const searchBtn = document.querySelector('.search-box button') as HTMLButtonElement;
@@ -42,4 +42,5 @@ searchBtn.addEventListener('click', () => {
   loadDestinations(searchBox.value);
 });
 
-loadDestinations(); // initial load
+// initial load
+loadDestinations();

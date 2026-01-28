@@ -1,8 +1,8 @@
 // src/signup.ts
 import { supabase } from './supabase.js';
 
+console.log("ofkeo");
 const signupForm = document.getElementById('signupForm') as HTMLFormElement;
-
 signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = (signupForm.elements[0] as HTMLInputElement).value;

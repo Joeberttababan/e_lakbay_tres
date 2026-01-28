@@ -1,4 +1,4 @@
-// src/destinations.ts
+// src/destination.ts
 import { supabase } from './supabase.js';
 
 export interface Destination {
