@@ -1,4 +1,4 @@
-import { supabase } from './supabase';
+import { supabase } from './supabase.js';
 // MUNICIPALITY SIGNUP
 export async function signUpMunicipality(email, password, municipality) {
     const { error } = await supabase.auth.signUp({

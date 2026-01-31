@@ -1,5 +1,5 @@
 // src/login.ts
-import { supabase } from './supabase.js';
+import { supabase } from './supabase';
 
 const loginForm = document.getElementById('loginForm') as HTMLFormElement;
 

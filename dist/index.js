@@ -1,5 +1,5 @@
 // src/index.ts
-import { getDestinations, incrementVisit } from './destination';
+import { getDestinations, incrementVisit } from './destination.js';
 const searchBox = document.querySelector('.search-box input');
 const searchBtn = document.querySelector('.search-box button');
 const topDestinationsDiv = document.getElementById('topDestinations');

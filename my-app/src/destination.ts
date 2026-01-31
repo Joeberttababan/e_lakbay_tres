@@ -1,5 +1,5 @@
 // src/destination.ts
-import { supabase } from './supabase.js';
+import  { supabase }  from './supabase.js';
 
 export interface Destination {
   id: number;

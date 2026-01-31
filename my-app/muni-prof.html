@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipality Profile</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <h1>Welcome to the Municipality Profile</h1>
+  <div id="profileInfo"></div>
+
+  <script type="module">
+    import { supabase } from './supabase.js';
+
+    async function loadProfile() {
+      const user = supabase.auth.getUser();
+
+      if (!user) {
+        // If user is not logged in, redirect to login page
+        window.location.href = 'login.html';
+        return;
+      }
+
+      document.getElementById('profileInfo').innerHTML = `
+        <p>Full Name: ${user.data.user?.user_metadata.full_name}</p>
+        <p>Email: ${user.data.user?.email}</p>
+        <p>Role: ${user.data.user?.user_metadata.role}</p>
+      `;
+    }
+
+    loadProfile();
+  </script>
+</body>
+</html>

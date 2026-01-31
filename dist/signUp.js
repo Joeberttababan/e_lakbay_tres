@@ -1,6 +1,6 @@
 // src/signup.ts
-import { supabase } from './supabase.js';
-
+import { supabase } from './supabase';
+console.log("ofkeo");
 const signupForm = document.getElementById('signupForm');
 signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
